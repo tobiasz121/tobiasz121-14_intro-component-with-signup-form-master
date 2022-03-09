@@ -1,0 +1,257 @@
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --primary-1: hsl(0, 100%, 74%);
+    --primary-2: hsl(154, 59%, 51%);
+
+    --accent: hsl(248, 32%, 49%);
+
+    --neutral-1: hsl(249, 10%, 26%);
+    --neutral-2: hsl(246, 25%, 77%);
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: var(--primary-1);
+    background-image: url('../images/bg-intro-desktop.png');
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+p {
+    line-height: 2.2rem;    
+}
+
+main {
+    min-height: 100vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 6rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+.central {
+    max-width: 111rem;
+    min-height: 56rem;
+    border: 1px solid var(--white);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    min-width: 55rem;
+
+}
+
+.left > p {
+    opacity: 80%;
+    letter-spacing: 0.5px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 54rem;
+}
+
+.right-trial-header {
+    min-width:100%;
+    border-radius: 1rem;
+    background-color: var(--accent);
+    min-height: 5.5rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.right-trial-header > p {
+    margin:auto
+}
+
+.right-form {
+    width: 100%;
+    border-radius: 1rem;
+    background-color: var(--white);
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
+}
+
+input {
+    width:80%;
+    border: 1px solid var(--black);
+    margin: auto;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    padding-left:3rem;
+    margin-top:2rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+
+.right-form-button {
+    width:80%;    
+    height: 5.5rem;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: var(--primary-2);
+    margin: auto;
+    border:none;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 2rem;
+    
+}
+
+.right-form-button:hover {
+    opacity: 80%;
+    box-shadow: 0px 3px 2px 1px rgba(55, 183, 141, 1);
+}
+
+
+
+.terms {
+    color:var(--neutral-1);
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.terms > span {
+    font-weight: 600;
+    color:red
+}
+
+.error {
+    border: 2px solid red;
+}
+
+label {
+    color:red;    
+    width: 80%;
+    text-align: right;
+    margin: auto;
+    font-size: 1.2rem;
+    font-style: italic;
+    display: none;
+    position: relative;
+}
+
+.empty-visible {
+    display: block;
+}
+
+form img {
+    width:25px;
+    height: auto;
+    position: absolute;
+    right: 2rem;
+    top:-5rem
+}
+
+.bolded {
+    color:red;
+    font-weight: 600;
+    font-size:1.6rem
+}
+
+.box-shadow {
+    box-shadow: 0px 9px 3px 0px rgba(120, 120, 121, 1);
+}
+
+@media screen and (max-width:500px) {
+
+    main {
+        min-width: 350px;
+        margin-inline: auto;
+    }
+
+
+    .central {
+        display: block;
+        min-width: 0;
+        padding-inline: 2rem;
+    }   
+    
+
+    .left {
+        min-width: 0;
+        max-width: 100%;
+        align-items: center;
+        margin-bottom: 6rem;
+        
+    }
+
+    .left > p {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 2rem
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.7rem;
+        line-height: 3.1rem;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .right {        
+        max-width: 100%;
+        min-width: 0;
+        margin-bottom: 5rem;
+    }
+
+    .right-trial-header{
+        min-height: 6.5rem;
+    }
+
+    .right-trial-header > p {
+        text-align: center;
+        padding: 3rem;
+        padding-inline: 5rem;
+    }
+}
