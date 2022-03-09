@@ -58,8 +58,7 @@ span {
 
 .central {
     max-width: 111rem;
-    min-height: 56rem;
-    border: 1px solid var(--white);
+    min-height: 56rem;    
     margin: auto;
     display: flex;
     justify-content: space-between;
